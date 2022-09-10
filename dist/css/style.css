@@ -74,11 +74,6 @@ h6 {
   font-size: inherit;
 }
 
-.lock body {
-  overflow: hidden;
-  touch-action: none;
-}
-
 .wrapper {
   min-height: 100%;
   display: flex;
