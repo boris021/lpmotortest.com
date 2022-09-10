@@ -6,12 +6,10 @@
 	background-color: $redColor;
 	border-radius: 5px;
 	border: 2px solid $redColor;
-	transition: all 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s;
 
 	&:hover {
-		color: $redColor;
-		background-color: #fff;
-		border: 2px solid $redColor;
+		opacity: 0.8;
 	}
 }
 
@@ -22,17 +20,21 @@
 	background-color: #fff;
 	border-radius: 5px;
 	border: 2px solid $redColor;
-	transition: all 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s;
 
 	&:hover {
-		color: #fff;
-		background-color: $redColor;
-		border: 2px solid #fff;
+		opacity: 0.8;
+		color: #111;
 	}
 }
 
 .title {
-	@include adaptiveValue("font-size", 60, 50);
+	font-size: 60px;
 	margin-bottom: 25px;
 	text-align: center;
+
+	@media (max-width:$tablet) {
+		font-size: 48px;
+		margin-bottom: 15px;
+	}
 }

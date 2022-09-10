@@ -1,7 +1,9 @@
 <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">X</button>
+			<div class="popup__crest">
+				<button data-close type="button" class="popup__close">&#10006;</button>
+			</div>
 			<div class="popup__text">
 				<div class="popup__title">Write to us!</div>
 				<form data-ajax data-popup-message="#message" class="form" method="POST" action="sendmail.php">
@@ -19,7 +21,7 @@
 						<div class="field__file-button">Choose</div>
 					</label>
 
-					<button type="submit" class="button btn-red">SEND</button>
+					<button type="submit" class=" btn-red popup__button">SEND</button>
 				</form>
 			</div>
 		</div>
@@ -29,7 +31,9 @@
 <div id="popup2" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">X</button>
+			<div class="popup__crest">
+				<button data-close type="button" class="popup__close">&#10006;</button>
+			</div>
 			<div class="popup__text">
 				<div class="popup__title">畀我哋留言！</div>
 				<form data-ajax data-popup-message="#message" class="form" method="POST" action="sendmail.php">
