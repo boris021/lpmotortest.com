@@ -1,19 +1,26 @@
 //<FORM>
 // Снипет (HTML):
 .form {
-	&__row {
-	}
-	&__column {
-	}
-	&__line {
-	}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&__row {}
+
+	&__column {}
+
+	&__line {}
+
 	&__input {
+		// border: 1px solid #cccccc;
 	}
-	&__button {
-	}
-	&__error {
-	}
+
+	&__button {}
+
+	&__error {}
 }
+
 //</FORM>
 
 // <BUTTONS>
@@ -22,7 +29,7 @@
 
 // <INPUTS>
 // Снипет (HTML): inp
-// @import "input";
+@import "input";
 
 // <CHECK>
 // Снипет (HTML): chk

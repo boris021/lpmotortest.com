@@ -1,16 +1,26 @@
 // Подключение функционала "Чертогов Фрилансера"
 // Подключение списка активных модулей
-import { flsModules } from "../modules.js";
+import {
+	flsModules
+} from "../modules.js";
 // Вспомогательные функции
-import { isMobile, _slideUp, _slideDown, _slideToggle, FLS } from "../functions.js";
+import {
+	isMobile,
+	_slideUp,
+	_slideDown,
+	_slideToggle,
+	FLS
+} from "../functions.js";
 // Модуль прокрутки к блоку
-import { gotoBlock } from "../scroll/gotoblock.js";
+import {
+	gotoBlock
+} from "../scroll/gotoblock.js";
 //================================================================================================================================================================================================================================================================================================================================
 
 /*
 Чтобы поле участвовало в валидации добавляем атрибут data-required
 Особые проверки:
-data-required="email" - вадидация E-mail
+// data-required="email" - вадидация E-mail
 
 Чтобы поле валидировалось при потере фокуса, 
 к атрибуту data-required добавляем атрибут data-validate
@@ -182,7 +192,7 @@ export function formSubmit(validate) {
 					alert("Ошибка");
 					form.classList.remove('_sending');
 				}
-			} else if (form.hasAttribute('data-dev')) {	// Если режим разработки
+			} else if (form.hasAttribute('data-dev')) { // Если режим разработки
 				e.preventDefault();
 				formSent(form);
 			}
@@ -215,6 +225,7 @@ export function formSubmit(validate) {
 		// Сообщаем в консоль
 		formLogging(`Форма отправлена!`);
 	}
+
 	function formLogging(message) {
 		FLS(`[Формы]: ${message}`);
 	}

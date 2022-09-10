@@ -8,18 +8,85 @@ textarea {
 	-moz-appearance: none;
 	appearance: none;
 }
+
 .input {
-	border-radius: 0 !important;
 	width: 100%;
 	display: block;
 	padding: 0px 20px;
-	border: 1px solid #eee;
-	&._focus {
-	}
+	border: 1px solid #cccccc;
+	max-width: 300px;
+	background-color: rgba(255, 255, 255, 1);
+	height: 40px;
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	border-radius: 4px;
+
+	&._focus {}
+
 	&._error {
+		font-size: 12px;
+		color: red;
 	}
 }
+
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
+	padding: 10px 20px;
+	height: 120px;
+}
+
+::placeholder {
+	color: rgba(0, 0, 0, 1);
+	height: 40px;
+	font-size: 15px;
+}
+
+
+
+.field__wrapper {
+	// width: 100%;
+	position: relative;
+	margin: 15px 0;
+	text-align: center;
+}
+
+.field__file {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+
+.field__file-wrapper {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.field__file-fake {
+	height: 40px;
+	width: calc(100% - 100px);
+	display: flex;
+	align-items: center;
+	padding: 0px 20px;
+	font-size: 15px;
+	border: 1px solid #A5A5A5;
+	border-radius: 3px 0 0 3px;
+	border-right: none;
+}
+
+.field__file-button {
+	width: 100px;
+	height: 40px;
+	background: #A5A5A5;
+	color: #fff;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
 }

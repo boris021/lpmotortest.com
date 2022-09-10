@@ -1,11 +1,64 @@
-<!-- 
 <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
+			<button data-close type="button" class="popup__close">X</button>
 			<div class="popup__text">
+				<div class="popup__title">Write to us!</div>
+				<form data-ajax data-popup-message="#message" class="form" method="POST" action="sendmail.php">
+					<input data-validate autocomplete="off" type="text" name="name" data-error="Error" placeholder="Name*"
+						class="input">
+					<input data-validate data-required="text" data-required="email" type="email" name="mail"
+						data-error="Error" placeholder="E-mail*" class="input" data-required>
+
+					<textarea name="message" cols="40" rows="10" class="input" placeholder="Message"> Message</textarea>
+
+					<input name="image" type="file" id="field__file-2" class="field field__file" multiple>
+
+					<label class="field__file-wrapper" for="field__file-2">
+						<div class="field__file-fake">Attach File</div>
+						<div class="field__file-button">Choose</div>
+					</label>
+
+					<button type="submit" class="button btn-red">SEND</button>
+				</form>
 			</div>
 		</div>
 	</div>
 </div>
- -->
+
+<div id="popup2" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">X</button>
+			<div class="popup__text">
+				<div class="popup__title">畀我哋留言！</div>
+				<form data-ajax data-popup-message="#message" class="form" method="POST" action="sendmail.php">
+					<input data-validate autocomplete="off" type="text" name="name" data-error="Error" placeholder="名字*"
+						class="input">
+					<input data-validate data-required="text" data-required="email" type="email" name="mail"
+						data-error="Error" placeholder="電子郵件*" class="input" data-required>
+
+					<textarea name="message" cols="40" rows="10" class="input" placeholder="消息"> 消息</textarea>
+
+					<input name="image" type="file" id="field__file-2" class="field field__file" multiple>
+
+					<label class="field__file-wrapper" for="field__file-2">
+						<div class="field__file-fake">附加文件</div>
+						<div class="field__file-button">选择</div>
+					</label>
+
+					<button type="submit" class="button btn-red"> 發送 </button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="message" class="popup popup_send-message message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<button data-close type="button" class="popup__close">X</button>
+			<img src="@img/check.png" alt="check">
+		</div>
+	</div>
+</div>

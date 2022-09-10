@@ -11,9 +11,11 @@ body::after {
 	pointer-events: none;
 	z-index: 149;
 }
+
 .popup-show body::after {
 	opacity: 1;
 }
+
 .popup {
 	position: fixed;
 	top: 0;
@@ -24,18 +26,30 @@ body::after {
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
+
+	&__title {
+		font-size: 31px;
+		color: #000;
+		text-align: center;
+		margin-bottom: 40px;
+		font-weight: 600;
+	}
 }
+
 .popup_show {
 	z-index: 150;
 	visibility: visible;
 	overflow: auto;
 	pointer-events: auto;
 }
+
 .popup_show .popup__content {
 	visibility: visible;
 	transform: scale(1);
 }
+
 .popup__wrapper {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -46,16 +60,30 @@ body::after {
 	justify-content: center;
 	align-items: center;
 }
+
 .popup__content {
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: 20px;
+	background-color: #fff;
+	padding: 50px;
 	width: 100%;
-	max-width: 900px;
+	margin: auto;
+	max-width: 718px;
 	border-radius: 20px;
+
 	.lock & {
 		visibility: visible;
+	}
+}
+
+.popup__body {
+	img {
+		display: flex;
+		justify-content: center;
+		width: 200px;
+		text-align: center;
+		display: block;
+		margin: auto;
 	}
 }

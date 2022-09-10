@@ -6,7 +6,6 @@
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
 		<main class="page">
 
 			<section class="main">
@@ -17,8 +16,8 @@
 						</div>
 						<h1 class="main__header-title">IC SOLUTIONS LIMITED</h1>
 						<div class="main__header-buttons">
-							<a href="" class="main__header-btn btn-red">ENG</a>
-							<a href="" class="main__header-btn btn-white">中文</a>
+							<a href="index.html" class="main__header-btn btn-red">ENG</a>
+							<a href="chi.html" class="main__header-btn btn-white">中文</a>
 						</div>
 					</div>
 				</div>
@@ -129,13 +128,12 @@
 						<div class="contact__text">SUITE 1802, LIPPO CENTRE, TOWER ONE, 89 QUEENSWAY, ADMIRALTY, HONG KONG
 						</div>
 						<a href="mailto:ics.office.hk@gmail.com" class="contact__mail">ics.office.hk@gmail.com</a>
-						<a href="" class="contact__btn btn-red">Write to us!</a>
+						<a href="#" data-popup="#popup" class="contact__btn btn-red">Write to us!</a>
 					</div>
 				</div>
 			</section>
 
 		</main>
-		@@include('html/_footer.htm',{})
 	</div>
 	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})
