@@ -1,0 +1,31 @@
+// Заголовки, общие БЄМ блоки и проче...
+.btn-red {
+	font-size: 16px;
+	color: #fff;
+	padding: 15px 45px;
+	background-color: $redColor;
+	border-radius: 5px;
+	border: 1px solid inherit;
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		color: $redColor;
+		background-color: #fff;
+		border: 1px solid $redColor;
+	}
+}
+
+.btn-white {
+	font-size: 16px;
+	color: $redColor;
+	padding: 15px 45px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid $redColor;
+
+	&:hover {
+		color: #fff;
+		background-color: $redColor;
+		border: 1px solid #fff;
+	}
+}

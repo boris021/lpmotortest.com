@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="main">
+				<div class="main__container">
+					<div class="main__header">
+						<div class="main__logo">
+							<img src="@img/logo.png" alt="logo">
+						</div>
+						<div class="main__header-title">IC SOLUTIONS LIMITED</div>
+						<div class="main__header-buttons">
+							<a href="" class="main__header-btn btn-red">ENG</a>
+							<a href="" class="main__header-btn btn-white">中文</a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="about"></section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
